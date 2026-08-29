@@ -1,0 +1,280 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Sidebar from '../components/Sidebar.astro';
+import Icon from '../components/Icon.astro';
+import content from '../data/content.json';
+import { assetPath } from '../lib/assetPath.js';
+
+const cvHeroHref = assetPath(content.hero.cv_download_asset);
+const cvResumeHref = assetPath(content.resume_section.resume_cta_asset);
+---
+
+<BaseLayout>
+  <div class="site-shell">
+    <Sidebar home={true} />
+
+    <main class="main-content">
+      <!-- ABOUT ME -->
+      <section id="about-me" class="section">
+        <p class="section-subtitle">Welcome</p>
+        <h1 class="bio-heading">{content.hero.name}</h1>
+        <p class="bio-subtitle">{content.hero.subtitle}</p>
+
+        {content.hero.bio_paragraphs.map((p) => (
+          <p>{p}</p>
+        ))}
+
+        <a class="btn" href={cvHeroHref} download>{content.hero.cv_download_label}</a>
+
+        <div class="what-i-do">
+          <h2 class="section-title">What I Do</h2>
+          <div class="what-i-do-grid">
+            {content.what_i_do.map((item) => (
+              <div class="wid-item">
+                <Icon name={item.icon} class="wid-icon" />
+                <h3>{item.title}</h3>
+                <ul>
+                  {item.lines.map((line) => (
+                    <li>{line}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="employers">
+          <h2 class="section-title">Past Employers</h2>
+          <div class="employers-strip">
+            {content.past_employers.map((emp) => (
+              <img src={assetPath(emp.logo_asset)} alt={emp.name} loading="lazy" />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <!-- RESUME -->
+      <section id="resume" class="section">
+        <p class="section-subtitle">My Career</p>
+        <h2 class="section-title">Resume</h2>
+
+        <div class="resume-layout">
+          <div>
+            <h3>Experience</h3>
+            <ul class="timeline">
+              {content.experience.map((job) => (
+                <li class="timeline-item">
+                  <div class="timeline-period">{job.period}</div>
+                  <div class="timeline-header">
+                    {job.logo_asset && (
+                      <img class="timeline-logo" src={assetPath(job.logo_asset)} alt={job.company} loading="lazy" />
+                    )}
+                    <div>
+                      <h4>{job.title}</h4>
+                      <div class="timeline-company">{job.company}</div>
+                    </div>
+                  </div>
+                  {job.description && <p>{job.description}</p>}
+                  {job.bullets && (
+                    <ul>
+                      {job.bullets.map((b) => <li>{b}</li>)}
+                    </ul>
+                  )}
+                </li>
+              ))}
+            </ul>
+
+            <h3>Education</h3>
+            <ul class="timeline">
+              {content.education.map((edu) => (
+                <li class="timeline-item">
+                  <div class="timeline-period">{edu.period}</div>
+                  <div class="timeline-header">
+                    {edu.logo_asset && (
+                      <img class="timeline-logo" src={assetPath(edu.logo_asset)} alt={edu.institution} loading="lazy" />
+                    )}
+                    <div>
+                      <h4>{edu.title}</h4>
+                      <div class="timeline-company">{edu.institution}</div>
+                    </div>
+                  </div>
+                  {edu.description && <p>{edu.description}</p>}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <div class="side-widget">
+              <h3>Key Skills</h3>
+              {content.key_skills.map((skill) => (
+                <div class="skill-bar">
+                  <div class="skill-bar-label">
+                    <span>{skill.name}</span>
+                    <span>{skill.percent}%</span>
+                  </div>
+                  <div class="skill-bar-track">
+                    <div class="skill-bar-fill" style={`width: ${skill.percent}%; background: ${content.skill_bar_color};`}></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div class="side-widget">
+              <h3>Work Examples</h3>
+              <ul class="mini-portfolio-list">
+                {content.portfolio.projects.slice(0, 6).map((proj) => (
+                  <li><a href={`/project/${proj.slug}/`}>{proj.title}</a></li>
+                ))}
+              </ul>
+              <a class="btn btn-outline" href="#portfolio">See Full Portfolio</a>
+            </div>
+
+            <div class="side-widget">
+              <h3>Resume</h3>
+              <a class="btn" href={cvResumeHref} download>{content.resume_section.resume_cta_label}</a>
+              <a class="btn btn-outline" href={content.resume_section.contact_cta_anchor}>{content.resume_section.contact_cta_label}</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO -->
+      <section id="portfolio" class="section">
+        <p class="section-subtitle">My Work</p>
+        <h2 class="section-title">Portfolio</h2>
+        <p class="portfolio-intro">{content.portfolio.intro}</p>
+
+        <div class="filter-bar" id="portfolio-filter-bar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          {content.portfolio.categories.map((cat) => (
+            <button class="filter-btn" data-filter={cat.slug}>{cat.label}</button>
+          ))}
+        </div>
+
+        <div class="portfolio-grid" id="portfolio-grid">
+          {content.portfolio.projects.map((proj) => (
+            <a
+              class="portfolio-card"
+              href={`/project/${proj.slug}/`}
+              data-categories={proj.categories.join(',')}
+            >
+              <div class="portfolio-card-thumb">
+                <img src={assetPath(proj.image_asset)} alt={proj.title} loading="lazy" />
+              </div>
+              <div class="portfolio-card-body">
+                <h4>{proj.title}</h4>
+                <div class="portfolio-card-cat">
+                  {proj.categories
+                    .map((slug) => content.portfolio.categories.find((c) => c.slug === slug)?.label || slug)
+                    .join(', ')}
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <p class="section-subtitle">Get In Touch</p>
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact-grid">
+          <div class="contact-block">
+            <Icon name="phone" class="contact-icon" />
+            <h4>Phone</h4>
+            <p>{content.contact.phone}</p>
+          </div>
+          <div class="contact-block">
+            <Icon name="email" class="contact-icon" />
+            <h4>Email</h4>
+            <p>{content.contact.email}</p>
+          </div>
+          <div class="contact-block">
+            <Icon name="location" class="contact-icon" />
+            <h4>Location</h4>
+            <p>{content.contact.location}</p>
+          </div>
+          <div class="contact-block">
+            <Icon name="freelance" class="contact-icon" />
+            <h4>Availability</h4>
+            <p>{content.contact.availability}</p>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap">
+          <h3>{content.contact.form_heading}</h3>
+          <form
+            id="contact-form"
+            action={`mailto:${content.contact.email}`}
+            method="post"
+            enctype="text/plain"
+          >
+            <div class="form-row">
+              <div class="form-field">
+                <label for="cf-name">Full Name</label>
+                <input type="text" id="cf-name" name="Full Name" required />
+              </div>
+              <div class="form-field">
+                <label for="cf-email">Email Address</label>
+                <input type="email" id="cf-email" name="Email Address" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field full">
+                <label for="cf-subject">Subject</label>
+                <input type="text" id="cf-subject" name="Subject" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field full">
+                <label for="cf-message">Message</label>
+                <textarea id="cf-message" name="Message" required></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script define:vars={{ contactEmail: content.contact.email }}>
+    // Portfolio filter
+    const filterBar = document.getElementById('portfolio-filter-bar');
+    const grid = document.getElementById('portfolio-grid');
+    if (filterBar && grid) {
+      const cards = Array.from(grid.querySelectorAll('.portfolio-card'));
+      filterBar.addEventListener('click', (e) => {
+        const btn = e.target.closest('.filter-btn');
+        if (!btn) return;
+        filterBar.querySelectorAll('.filter-btn').forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        cards.forEach((card) => {
+          const cats = (card.dataset.categories || '').split(',');
+          const show = filter === 'all' || cats.includes(filter);
+          card.classList.toggle('hidden', !show);
+        });
+      });
+    }
+
+    // Contact form -> mailto submit
+    const form = document.getElementById('contact-form');
+    if (form) {
+      form.addEventListener('submit', (e) => {
+        const name = form.querySelector('#cf-name')?.value || '';
+        const email = form.querySelector('#cf-email')?.value || '';
+        const subject = form.querySelector('#cf-subject')?.value || '';
+        const message = form.querySelector('#cf-message')?.value || '';
+
+        const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
+        const mailto = `mailto:${contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+        e.preventDefault();
+        window.location.href = mailto;
+      });
+    }
+  </script>
+</BaseLayout>

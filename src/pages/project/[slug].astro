@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import Icon from '../../components/Icon.astro';
+import content from '../../data/content.json';
+import { assetPath } from '../../lib/assetPath.js';
+
+export function getStaticPaths() {
+  return content.portfolio.projects.map((project) => ({
+    params: { slug: project.slug },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+const imageSrc = assetPath(project.image_asset);
+const pdfHref = project.pdf_asset ? assetPath(project.pdf_asset) : null;
+const pageTitle = `${project.title} – ${content.site.title}`;
+---
+
+<BaseLayout title={pageTitle} description={project.title}>
+  <div class="site-shell">
+    <Sidebar home={false} />
+
+    <main class="main-content">
+      <section class="section">
+        <a class="project-back-link" href="/#portfolio">&larr; Back to Portfolio</a>
+        <h1 class="section-title">{project.title}</h1>
+
+        <div class="project-layout">
+          <div class="project-image-wrap">
+            {pdfHref ? (
+              <>
+                <a href={pdfHref} target="_blank" rel="noopener noreferrer">
+                  <img src={imageSrc} alt={project.title} />
+                </a>
+                <p class="project-pdf-note">Click the image to view the full PDF</p>
+              </>
+            ) : (
+              <img src={imageSrc} alt={project.title} />
+            )}
+          </div>
+
+          <div class="project-desc-box">
+            <h3>Description</h3>
+            <div class="project-meta-line">
+              <Icon name="user" />
+              <span>{project.info_label}</span>
+            </div>
+            <div class="project-meta-line">
+              <Icon name="calendar" />
+              <span>{project.info_date}</span>
+            </div>
+            <div class="project-caption" set:html={project.caption_html}></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</BaseLayout>

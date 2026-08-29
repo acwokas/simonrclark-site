@@ -1,0 +1,32 @@
+---
+import '../styles/global.css';
+import { assetPath } from '../lib/assetPath.js';
+import content from '../data/content.json';
+
+const { title = content.site.title, description = `${content.site.title} — ${content.site.tagline}` } = Astro.props;
+const faviconHref = assetPath(content.site.favicon_asset);
+const ga4Id = content.site.ga4_id;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href={faviconHref} />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src={`https://www.googletagmanager.com/gtag/js?id=${ga4Id}`}></script>
+    <script define:vars={{ ga4Id }}>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', ga4Id);
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

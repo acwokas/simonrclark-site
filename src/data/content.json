@@ -1,0 +1,377 @@
+{
+  "site": {
+    "title": "Simon Clark",
+    "tagline": "Editor and Communications Professional",
+    "ga4_id": "G-RJPZ7L287L",
+    "favicon_asset": "cropped-si_favicon.png",
+    "profile_photo_asset": "SimonClark.jpg",
+    "linkedin_url": "https://www.linkedin.com/in/simon-clark-630b7819/"
+  },
+  "hero": {
+    "subtitle": "Editor and Communications Professional",
+    "name": "Simon Clark",
+    "bio_paragraphs": [
+      "I am an experienced editor and communications professional with over 15 years’ experience in corporate communications roles, both in-house and agency.",
+      "I have experience working with some of the biggest names in the financial, government, technology, infrastructure, science, and sport sectors and have worked on public relations campaigns for leading brands.",
+      "This includes having produced copy in both long form and short form formats, with my work including writing annual reports, press releases, social media posts, speeches, presentations, management award entries, UX, and website copy.",
+      "In my spare time I am an avid follower of sport, an amateur sportsman, and enjoy reading the odd book."
+    ],
+    "cv_download_asset": "SimonClarkCVMay2022.pdf",
+    "cv_download_label": "Download CV"
+  },
+  "what_i_do": [
+    {
+      "icon": "megaphone",
+      "title": "Public Relations",
+      "lines": [
+        "Experience of formulating public relations plans.",
+        "Experience of reacting to press enquiries and selling stories to the media.",
+        "Experience of working with radio, television, new media and written press.",
+        "Crisis communications experience.",
+        "Experience writing press releases, media statements etc."
+      ]
+    },
+    {
+      "icon": "executive",
+      "title": "Senior Executive Communications",
+      "lines": [
+        "Experience of speech writing for senior level executives.",
+        "Experience of press interview management for senior executives, including the creation of briefing books"
+      ]
+    },
+    {
+      "icon": "globe",
+      "title": "Digital Communications",
+      "lines": [
+        "Experience of working on and managing the re-design of corporate websites.",
+        "Creation of content for both.",
+        "Highly experienced user of Content Management Systems.",
+        "Worked as an editor on corporate websites.",
+        "Experience of training others to use corporate Content Management Systems."
+      ]
+    },
+    {
+      "icon": "stakeholder",
+      "title": "Stakeholder Management & Internal Communications",
+      "lines": [
+        "Management of communications with internal and external interest groups.",
+        "Experience of working directly with staff at all levels, including direct reports into senior management at local, regional and international level.",
+        "Experience of creating staff surveys and analysing results.",
+        "Experience of writing copy for the APAC intranet site of a large multinational.",
+        "I was part of an internal team at Hill and Knowlton with a remit to drive employee engagement activities in the local Hong Kong office."
+      ]
+    },
+    {
+      "icon": "pen",
+      "title": "Writing",
+      "lines": [
+        "Experienced writer (and editor) with a work portfolio across various industries (including infrastructure), and many years’ spent with major international public relations agencies (Hill and Knowlton Strategies and Ogilvy – WPP).",
+        "Executive speeches, press releases, reports, presentations, internet copy, intranet copy, corporate brochures, annual reports, SEO relevant copy for websites, social media copy.",
+        "Project management of corporate publications through whole production process from copy writing to final sign off.",
+        "Creation of CSR based promotional literature for multi-national companies."
+      ]
+    }
+  ],
+  "past_employers": [
+    { "name": "Ogilvy", "logo_asset": "Ogilvy2.jpg" },
+    { "name": "Golin", "logo_asset": "golin-harris-1200px-logo.png" },
+    { "name": "Hill+Knowlton", "logo_asset": "HillKnowlton2.jpg" },
+    { "name": "EPSRC", "logo_asset": "epsrc-logo.png" },
+    { "name": "BrandRapport", "logo_asset": "BrandRapport2.jpg" },
+    { "name": "Matchtight", "logo_asset": "Matchtight2.jpg" }
+  ],
+  "experience": [
+    {
+      "period": "January 2021 - Present",
+      "company": "Various",
+      "logo_asset": "cropped-si_favicon.png",
+      "title": "Freelance Copywriter",
+      "description": "Including for Alvarez & Marsal, a leading global professional services firm."
+    },
+    {
+      "period": "March 2016 - December 2020",
+      "company": "Ogilvy Public Relations",
+      "logo_asset": "Ogilvy2.jpg",
+      "title": "Senior Consultant – Editor/Copywriter",
+      "description": "My focus is on content creation and English editing for clients across the technology, consumer, travel and finance industries. This includes annual reports, press releases, social media posts, speeches, presentations, management award entries, UX, and website copy."
+    },
+    {
+      "period": "October 2015 - March 2016",
+      "company": "Golin Harris",
+      "logo_asset": "golin6.png",
+      "title": "Freelance Content Manager",
+      "description": "In this contract role, I was responsible for the creation of content for technology clients like Huawei and Worldpay. This included lifestyle pieces, press releases, infographics and video scripts."
+    },
+    {
+      "period": "August 2013 – September 2015",
+      "company": "Freelance",
+      "logo_asset": null,
+      "title": "Freelance Copywriter",
+      "description": "Working as a freelance editor and copywriter. Work included writing compliance related literature for Thomson Reuters. I also worked for other clients in Hong Kong and the UK."
+    },
+    {
+      "period": "May 2012 – July 2013",
+      "company": "Hill + Knowlton Strategies",
+      "logo_asset": "HillKnowlton2.jpg",
+      "title": "Senior Consultant",
+      "description": "In a very challenging role I was actively involved with a diverse range of clients across the consumer, technology and finance industries.",
+      "bullets": [
+        "Worked with major international brands to create communications strategies for their activities in the APAC region.",
+        "Responsible for running events, media management, report writing, copywriting, proofreading, post-event evaluation and crisis communications.",
+        "Leading portion of my work included promoting coverage of HSBC’s golf sponsorship across Asia through event management, content writing and placing articles in international business publications.",
+        "Wrote and edited copy for technology and finance clients such as Sony, Blackberry and HSBC, which also included writing by-line articles, promotional literature and award submissions.",
+        "Carried out internal staff surveys and regularly contributed articles to the H+K regional intranet.",
+        "Part of the Hong Kong team that worked on internal employee engagement activities.",
+        "Developed and executed the creation of two major CSR reports for Veolia Water in China."
+      ]
+    },
+    {
+      "period": "January 2012 – May 2012",
+      "company": "Brand Rapport",
+      "logo_asset": "BrandRapport2.jpg",
+      "title": "Consultant (Contract Role)",
+      "description": "Public relations support, copywriting, event support and business generation for sports related clients."
+    },
+    {
+      "period": "March 2010 – June 2011",
+      "company": "Matchtight Ltd",
+      "logo_asset": "Matchtight2.jpg",
+      "title": "Press Officer/ Copywriter/Marketing (Contract Role)",
+      "bullets": [
+        "Created copy for press releases and publications.",
+        "Dealt with press enquiries and set up interviews for the company’s clients.",
+        "Onsite assistance with press operations at events.",
+        "Actively promoted news stories and athlete interview opportunities to the press.",
+        "Managed client press activities to maximise commercial exposure for their sponsors (such as Siemens and Puma)."
+      ]
+    },
+    {
+      "period": "June 2009 – August 2009",
+      "company": "Engineering & Physical Sciences Research Council",
+      "logo_asset": "epsrc-logo.png",
+      "title": "Web Publisher (Contract Role)",
+      "bullets": [
+        "Responsible for planning the migration of editorial content from an old website onto a new one.",
+        "Migration involved using a content management system and Microsoft Sharepoint to transfer copy, images, tables, downloadable documents (word, excel and PDF documents) and links onto the new site."
+      ]
+    },
+    {
+      "period": "October 2004 – December 2008",
+      "company": "Bath Rugby Club",
+      "logo_asset": "download.png",
+      "title": "Communications Manager",
+      "bullets": [
+        "Liaised with local, national and international press (written, radio and TV) on the phone, in person and via e-mail.",
+        "Created, planned and implemented the club’s PR strategy.",
+        "Worked with outside agencies on the club’s implementation of Premiership (rugby union league) PR campaigns (for league sponsors - including Land Rover, Guinness, Lucozade and Bank of America).",
+        "Sourced opportunities for the media to interview key club personnel, actively looked to put news stories in the press and reacted to difficult press enquiries.",
+        "Researched, wrote and put together press releases.",
+        "Created content for the Bath Rugby website and used a content management system to put articles, pictures and other graphics on the website.",
+        "Editor of the club match day programme."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "period": "2002-2003",
+      "institution": "Universidad Europea de Madrid",
+      "logo_asset": "ue-logo-mobile.png",
+      "title": "Masters, Multimedia Sports Journalism",
+      "description": "Course covered radio, internet, print and television journalism as well as the organisation and running of sporting bodies and sports events using the use of PR and marketing."
+    },
+    {
+      "period": "1998-2002",
+      "institution": "Sheffield Hallam University",
+      "logo_asset": "Sheffiled_hallam.png",
+      "title": "BA (Hons) in Tourism Management (2nd class)",
+      "description": "The degree covered various aspects of tourism as well as the business side of the industry, which included the financial, marketing and human resource facets needed."
+    }
+  ],
+  "key_skills": [
+    { "name": "Writing", "percent": 100 },
+    { "name": "Public Relations", "percent": 95 },
+    { "name": "Stakeholder Management", "percent": 80 },
+    { "name": "Internal Communications", "percent": 90 },
+    { "name": "Digital Communications", "percent": 90 },
+    { "name": "Executive Communications", "percent": 85 }
+  ],
+  "skill_bar_color": "#0099e5",
+  "portfolio": {
+    "intro": "Below, you can find a selection of my work, ranging from interview pieces, through to press releases and annual reports for leading businesses and UX copywriting examples. You can use the links to filter specific categories. Enjoy the read!",
+    "categories": [
+      { "slug": "annualreports", "label": "Annual Reports" },
+      { "slug": "esg", "label": "ESG" },
+      { "slug": "executive-communications", "label": "Executive Communications" },
+      { "slug": "internalcommunications", "label": "Internal Communications" },
+      { "slug": "pressreleases", "label": "Press Releases" },
+      { "slug": "sport", "label": "Sport" },
+      { "slug": "ux", "label": "UX" }
+    ],
+    "projects": [
+      {
+        "slug": "ocean-park",
+        "title": "Ocean Park Annual Report 2019-2020",
+        "categories": ["annualreports"],
+        "image_asset": "Screenshot-2021-02-15-at-2.25.52-PM.png",
+        "pdf_asset": "ophk_ar19-20.pdf",
+        "info_label": "Ocean Park Annual Report",
+        "info_date": "2019-2020",
+        "caption_html": "<p>Click the image to view the full PDF</p>"
+      },
+      {
+        "slug": "london-irish",
+        "title": "London Irish matchday programme",
+        "categories": ["sport"],
+        "image_asset": "London-Irish-programme-Sept.jpg",
+        "pdf_asset": null,
+        "info_label": "London Irish matchday programme",
+        "info_date": "September 2008",
+        "caption_html": "<p>An introduction to the Bath Rugby team for the London Irish matchday programme.</p>"
+      },
+      {
+        "slug": "rugby-program",
+        "title": "England ‘A’ v France ‘A’ matchday rugby programme",
+        "categories": ["sport"],
+        "image_asset": "England-A-v-France-A-progra.jpg",
+        "pdf_asset": null,
+        "info_label": "England ‘A’ v France ‘A’ matchday rugby programme",
+        "info_date": "February 2008",
+        "caption_html": "<p>A profile of future England rugby star Matt Stevens.</p>"
+      },
+      {
+        "slug": "hsbc-champions-wrap-up",
+        "title": "HSBC Champions wrap up press release",
+        "categories": ["pressreleases", "sport"],
+        "image_asset": "Screenshot-2021-02-15-at-2.04.35-PM.png",
+        "pdf_asset": "HSBCChampionsWrap-up.pdf",
+        "info_label": "HSBC Champions wrap up press release",
+        "info_date": "November 2020",
+        "caption_html": "<p>A press release announcing the winner of the 2012 HSBC Champions golf tournament in China.</p>"
+      },
+      {
+        "slug": "earthlight-report-2022",
+        "title": "EarthLIGHT Report 2022",
+        "categories": ["esg"],
+        "image_asset": "Screenshot-2023-02-20-at-2.51.41-PM.png",
+        "pdf_asset": "earthlight-report-2022-two-page-spread-1.pdf",
+        "info_label": "Acuity Brands’ EarthLIGHT Report",
+        "info_date": "December 2022",
+        "caption_html": "<p>ESG Report for an American Lighting Company.</p><p><a href=\"/wp-content/uploads/2023/02/earthlight-report-2022-two-page-spread-1.pdf\">Link</a></p>"
+      },
+      {
+        "slug": "executive-article-in-cnme-magazine",
+        "title": "Executive Article in CNME Magazine",
+        "categories": ["executive-communications"],
+        "image_asset": "CNME-Be-Smart-With-Your-Data.jpg",
+        "pdf_asset": null,
+        "info_label": "CNME Magazine",
+        "info_date": "January 2023",
+        "caption_html": "<p>A published ‘ghost written’ article for an Alvarez and Marsal executive on Smart Tourism in the Middle East.</p>"
+      },
+      {
+        "slug": "a-m-press-release",
+        "title": "A&M press release",
+        "categories": ["pressreleases"],
+        "image_asset": "Screenshot-2022-04-25-at-9.08.23-PM.png",
+        "pdf_asset": "ampdf.pdf",
+        "info_label": "A&M press release",
+        "info_date": "April 2022",
+        "caption_html": "<p>A press release for Alvarez and Marsal (A&amp;M) announcing two new hires in Germany.</p>"
+      },
+      {
+        "slug": "malcolm-baldrige-national-quality-award-entry",
+        "title": "Malcolm Baldrige National Quality Award Entry",
+        "categories": ["esg"],
+        "image_asset": "Screenshot-2021-03-01-at-5.14.51-PM.png",
+        "pdf_asset": "Prudential_RS.pdf",
+        "info_label": "Malcolm Baldrige National Quality Award Entry",
+        "info_date": "April 2020",
+        "caption_html": "<p>This is a synopsis of the award entry I helped create for Prudential Hong Kong (I cannot share the full report for confidentially reasons), which helped them win a Merit Award from the Hong Kong Management Association (HKMA). With this annual Quality Award, the HKMA seeks not just to reward, but also bring public recognition to those organisations that have achieved outstanding standards of quality and made a lasting commitment to the process of quality management.</p>"
+      },
+      {
+        "slug": "hk-sinopec-report",
+        "title": "Veolia/Sinopec CSR report",
+        "categories": ["esg"],
+        "image_asset": "Screenshot-2021-02-15-at-2.29.06-PM.png",
+        "pdf_asset": "HK_SinopecReport_20May13.pdf",
+        "info_label": "Veolia/Sinopec CSR report",
+        "info_date": "May 2013",
+        "caption_html": "<p>A CSR report on a joint venture operation between Veolia Water and Sinopec at a Chinese petrochemical plant.</p>"
+      },
+      {
+        "slug": "asiamiles-ux",
+        "title": "Asia Miles EDM example",
+        "categories": ["ux"],
+        "image_asset": "AsiaMilesedmexample-1.jpg",
+        "pdf_asset": null,
+        "info_label": "Asia Miles EDM example",
+        "info_date": "October 2020",
+        "caption_html": "<p>An electronic direct mail (EDM) encouraging customers to earn Asia Miles.</p>"
+      },
+      {
+        "slug": "asia-miles-ux-copywriting-example",
+        "title": "Asia Miles UX copywriting example",
+        "categories": ["ux"],
+        "image_asset": "AsiaMilesUXexampleusingGoogledocs.jpg",
+        "pdf_asset": null,
+        "info_label": "Asia Miles UX copywriting example",
+        "info_date": "October 2020",
+        "caption_html": "<p>An example of UX copywriting for Asia Miles using Google Docs.</p>"
+      },
+      {
+        "slug": "cetacean-stranding-press-release",
+        "title": "OPCFHK press release",
+        "categories": ["pressreleases"],
+        "image_asset": "Screenshot-2021-02-15-at-5.12.54-PM.png",
+        "pdf_asset": "Cetacean-Stranding-Press-Release_English.pdf",
+        "info_label": "OPCFHK press release",
+        "info_date": "March 2018",
+        "caption_html": "<p>A press release for the Ocean Park Conservation Foundation Hong Kong (OPCFHK) on the number of stranding cases for cetaceans (dolphins, porpoises, whales etc.) in Hong Kong waters.</p>"
+      },
+      {
+        "slug": "huawei-announces-us20000-grand-prize-winner",
+        "title": "Huawei NEXT-IMAGE results announcement",
+        "categories": ["pressreleases"],
+        "image_asset": "Screenshot-2021-02-15-at-5.14.50-PM.png",
+        "pdf_asset": "HUAWEI-Announces-US20000-Grand-Prize-Winner-from-Over-400000-Entries-for-Second-Annual-NEXT-IMAGE-Awards_E_Final.pdf",
+        "info_label": "Huawei NEXT-IMAGE results announcement",
+        "info_date": "September 2018",
+        "caption_html": "<p>A press release announcing the winners of the Huawei NEXT-IMAGE awards, a smartphone only photography competition.</p>"
+      },
+      {
+        "slug": "mox-campaign-internal-announcement",
+        "title": "Internal communications example",
+        "categories": ["internalcommunications"],
+        "image_asset": "Screenshot-2021-02-15-at-5.03.15-PM.png",
+        "pdf_asset": "Mox-Campaign-Internal-Announcement.pdf",
+        "info_label": "Internal communications example",
+        "info_date": "May 2020",
+        "caption_html": "<p>An example of an internal announcement for a new virtual bank in Hong Kong.</p>"
+      },
+      {
+        "slug": "thomson-reuters-accelus",
+        "title": "Compliance challenges in frontier markets",
+        "categories": ["pressreleases"],
+        "image_asset": "Screenshot-2021-02-15-at-1.15.20-PM.png",
+        "pdf_asset": null,
+        "info_label": "Compliance challenges in frontier markets",
+        "info_date": "December 2013",
+        "caption_html": "<p>A compliance related piece on the need to tread carefully when operating in under-regulated frontier markets.</p>"
+      }
+    ]
+  },
+  "resume_section": {
+    "resume_cta_label": "Download CV",
+    "resume_cta_asset": "SimonClarkCVFebruary2021.pdf",
+    "contact_cta_label": "Contact Me",
+    "contact_cta_anchor": "#contact"
+  },
+  "contact": {
+    "phone": "+44-7861-323-885",
+    "email": "simonclark2015@gmail.com",
+    "location": "United Kingdom",
+    "availability": "Freelance Available",
+    "form_heading": "How Can I Help You?",
+    "form_fields": ["Full Name", "Email Address", "Subject", "Message"]
+  }
+}
