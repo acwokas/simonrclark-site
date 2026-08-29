@@ -93,7 +93,7 @@
       "company": "Ogilvy Public Relations",
       "logo_asset": "Ogilvy2.jpg",
       "title": "Senior Consultant – Editor/Copywriter",
-      "description": "My focus is on content creation and English editing for clients across the technology, consumer, travel and finance industries. This includes annual reports, press releases, social media posts, speeches, presentations, management award entries, UX, and website copy."
+      "description": "My focus was on content creation and English editing for clients across the technology, consumer, travel and finance industries. This included annual reports, press releases, social media posts, speeches, presentations, management award entries, UX, and website copy."
     },
     {
       "period": "October 2015 - March 2016",
@@ -107,7 +107,7 @@
       "company": "Freelance",
       "logo_asset": null,
       "title": "Freelance Copywriter",
-      "description": "Working as a freelance editor and copywriter. Work included writing compliance related literature for Thomson Reuters. I also worked for other clients in Hong Kong and the UK."
+      "description": "I worked as a freelance editor and copywriter. Work included writing compliance related literature for Thomson Reuters. I also worked for other clients in Hong Kong and the UK."
     },
     {
       "period": "May 2012 – July 2013",
@@ -367,7 +367,6 @@
     "contact_cta_anchor": "#contact"
   },
   "contact": {
-    "phone": "+44-7861-323-885",
     "email": "simonclark2015@gmail.com",
     "location": "United Kingdom",
     "availability": "Freelance Available",
