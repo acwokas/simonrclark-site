@@ -24,7 +24,7 @@ const cvResumeHref = assetPath(content.resume_section.resume_cta_asset);
           <p>{p}</p>
         ))}
 
-        <a class="btn" href={cvHeroHref} download>{content.hero.cv_download_label}</a>
+        <a class="btn" href={cvHeroHref} download data-ga-cv-download="hero">{content.hero.cv_download_label}</a>
 
         <div class="what-i-do">
           <h2 class="section-title">What I Do</h2>
@@ -124,7 +124,7 @@ const cvResumeHref = assetPath(content.resume_section.resume_cta_asset);
               <h3>Work Examples</h3>
               <ul class="mini-portfolio-list">
                 {content.portfolio.projects.slice(0, 6).map((proj) => (
-                  <li><a href={`/project/${proj.slug}/`}>{proj.title}</a></li>
+                  <li><a href={`/project/${proj.slug}/`} data-ga-project={proj.slug}>{proj.title}</a></li>
                 ))}
               </ul>
               <a class="btn btn-outline" href="#portfolio">See Full Portfolio</a>
@@ -132,7 +132,7 @@ const cvResumeHref = assetPath(content.resume_section.resume_cta_asset);
 
             <div class="side-widget">
               <h3>Resume</h3>
-              <a class="btn" href={cvResumeHref} download>{content.resume_section.resume_cta_label}</a>
+              <a class="btn" href={cvResumeHref} download data-ga-cv-download="resume">{content.resume_section.resume_cta_label}</a>
               <a class="btn btn-outline" href={content.resume_section.contact_cta_anchor}>{content.resume_section.contact_cta_label}</a>
             </div>
           </div>
@@ -158,6 +158,7 @@ const cvResumeHref = assetPath(content.resume_section.resume_cta_asset);
               class="portfolio-card"
               href={`/project/${proj.slug}/`}
               data-categories={proj.categories.join(',')}
+              data-ga-project={proj.slug}
             >
               <div class="portfolio-card-thumb">
                 <img src={assetPath(proj.image_asset)} alt={proj.title} loading="lazy" />
@@ -181,11 +182,6 @@ const cvResumeHref = assetPath(content.resume_section.resume_cta_asset);
         <h2 class="section-title">Contact</h2>
 
         <div class="contact-grid">
-          <div class="contact-block">
-            <Icon name="phone" class="contact-icon" />
-            <h4>Phone</h4>
-            <p>{content.contact.phone}</p>
-          </div>
           <div class="contact-block">
             <Icon name="email" class="contact-icon" />
             <h4>Email</h4>
@@ -272,9 +268,28 @@ const cvResumeHref = assetPath(content.resume_section.resume_cta_asset);
         const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
         const mailto = `mailto:${contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
+        gaEvent('generate_lead', { method: 'mailto' });
+
         e.preventDefault();
         window.location.href = mailto;
       });
     }
+
+    // GA4 event tracking
+    function gaEvent(name, params) {
+      if (typeof gtag === 'function') gtag('event', name, params);
+    }
+
+    document.querySelectorAll('a[data-ga-cv-download]').forEach((link) => {
+      link.addEventListener('click', () => {
+        gaEvent('cv_download', { location: link.dataset.gaCvDownload });
+      });
+    });
+
+    document.querySelectorAll('a[data-ga-project]').forEach((link) => {
+      link.addEventListener('click', () => {
+        gaEvent('select_content', { content_type: 'portfolio_project', item_id: link.dataset.gaProject });
+      });
+    });
   </script>
 </BaseLayout>
