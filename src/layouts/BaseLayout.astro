@@ -6,6 +6,7 @@ import content from '../data/content.json';
 const { title = content.site.title, description = `${content.site.title} — ${content.site.tagline}` } = Astro.props;
 const faviconHref = assetPath(content.site.favicon_asset);
 const ga4Id = content.site.ga4_id;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
@@ -16,6 +17,7 @@ const ga4Id = content.site.ga4_id;
     <link rel="icon" type="image/png" href={faviconHref} />
     <meta name="description" content={description} />
     <title>{title}</title>
+    <link rel="canonical" href={canonicalURL} />
 
     <!-- Google tag (gtag.js) -->
     <script async src={`https://www.googletagmanager.com/gtag/js?id=${ga4Id}`}></script>
